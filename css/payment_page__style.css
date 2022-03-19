@@ -1,0 +1,116 @@
+/* ! Base Style */
+.big-text{font-size: 70px;font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 16px;text-transform: uppercase;}
+.tw{color: #FFF;}
+.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+h2{
+ text-align: center;
+ letter-spacing: 2px;
+ margin-bottom: 40px;
+ color: #0d3c61;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background: #f2f2f2;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.payment{
+  background: #f8f8f8;
+  max-width: 360px;
+  margin:auto;
+  height: 100vh;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+.payment-form .label{
+  display: block;
+  color: #0d3c61;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background: rgb(0, 189, 16);
+  font-size: 20px;
+  border: 2px solid #2F2F2F ;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.btn:hover{
+  background: none;
+  border: 2px solid rgb(0, 189, 16) ;
+  color: rgb(0, 189, 16);
+}
+
+@media (max-width: 768px) {
+  .payment{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+/* Helpers */
+
+.mb{
+  margin-bottom: 20px;
+}

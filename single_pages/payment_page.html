@@ -1,0 +1,59 @@
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Burgarello Gabriele's Site</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="../css/payment_page__style.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="payment">
+    <h2 class="intro-text">Area di pagamento</h2>
+    <form class="payment-form" action="../index.html" method="post">
+			<label class="label small-text">Proprietario della carta:</label>
+      <div class=" mb icon-relative">
+        <label class="label">Nome:</label>
+        <input type="text" class="input" placeholder="Mario" required>
+        <i class="fas fa-user"></i>
+      </div>
+			<div class=" mb icon-relative">
+				<label class="label">Cognome:</label>
+				<input type="text" class="input" placeholder="Rossi" required>
+				<i class="fas fa-user"></i>
+			</div>
+      <div class="card mb icon-relative small-text">
+        <label class="label">Numero della carta:</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000" required>
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp mb">
+        <div class="card-item icon-relative">
+          <label class="label">Data di scadenza:</label>
+          <input type="text" name="" class="input" data-mask="00 / 00"  placeholder="00 / 00" required>
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" data-mask="000" placeholder="000" required>
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+
+      <input type="submit" class="btn" value="PAGA!">
+
+    </div>
+  </div>
+</div>
+</form>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</body>
+</html>

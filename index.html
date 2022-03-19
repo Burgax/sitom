@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Irama's site</title>
+    <!-- css di reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous"  />
+    <link rel="stylesheet" href="css/index__style.css"> <!-- css -->
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7f23fc3b3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="" height="50" width="130">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="single_pages/cards/ticket.html"> Biglietti </a></li>
+        <li><a href="single_pages/cards/gadgets.html" rel="author"> Gadgets </a></li>
+        <li><a href="single_pages/cards/cd.html" rel="author"> CD </a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="big-text title">IRAMA</h1>
+        <p class="intro-text ">"E allora resta ancora cinque minuti, tanto lo sai che poi saranno ore."</p>
+      </div>
+    </section>
+    <section class="cards reveal  ">
+      <div class="card card1" >
+        <a href="single_pages/cards/ticket.html">
+          <div class="card__img">
+            <img src="images/concerto.jpg" alt="concerto">
+          </div>
+          <div class="card__content">
+            <h3 class="med-text">Biglietti</h3>
+            <p class="normal-text">Acquista ora i biglietti per i prossimi live!</p>
+          </div>
+        </a>
+
+      </div>
+      <div class="card card2">
+        <a href="single_pages/cards/gadgets.html">
+          <div class="card__img">
+            <img src="images/gadgets/tazza.png" alt="tazza" >
+          </div>
+          <div class="card__content">
+            <h3 class="med-text">Gadgets</h3>
+            <p class="normal-text">Acquista ora i nuovissimi gadget di irama!</p>
+          </div>
+        </a>
+      </div>
+      <div class="card card3 mb-1">
+        <a href="single_pages/cards/cd.html">
+          <div class="card__img">
+            <img src="images/cd/cd1.jpg" alt="cd">
+          </div>
+          <div class="card__content">
+            <h3 class="med-text">CD</h3>
+            <p class="normal-text">Acquista ora il nuovo album:"Il giorno in cui ho smesso di pensare." </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      ScrollReveal().reveal('.reveal',  { distance: '100px', duration: 3000, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+    </script>
+    <script>
+    $( document ).ready(function() {
+
+      /* Open Panel */
+      $( ".hamburger" ).on('click', function() {
+        $(".menu").toggleClass("menu--open");
+      });
+
+
+    });
+  </script>
+  </body>
+</html>

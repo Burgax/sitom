@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Irama's gadgets</title>
+    <!-- css di reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous"  />
+    <link rel="stylesheet" href="../../css/index__style.css">
+    <link rel="stylesheet" href="../../css/cards__css/shop.css"> <!-- css -->
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7f23fc3b3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header header1">
+      <div class="logo">
+        <img src="../../images/logo.png" alt="" height="50" width="130">
+      </div>
+      <ul class="menu">
+        <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="ticket.html"> Biglietti </a></li>
+        <li><a href="gadgets.html" rel="author" id="active"> Gadgets </a></li>
+        <li><a href="cd.html" rel="author"> CD </a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="block mt-1">
+      <ul>
+        <li>
+          <div class="block__card">
+              <div class="block__card__img">
+                  <img src="../../images/gadgets/tazza.png" alt="" width="400px">
+              </div>
+              <div class="block__card__content">
+                  <h3>Tazza</h3>
+                  <h2 class="price">9.99€</h2>
+                  <form class="" action="javascript:apri('../payment_page.html');" method="post">
+                    <input type="number" name="" value="0" min="1" class="n_product required"> <br>
+                    <input type="submit" name="" value="COMPRA ORA!" class="buy">
+                  </form>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="block__card a1">
+              <div class="block__card__img ">
+                  <img src="../../images/gadgets/felpa.png" alt="" width="210px" >
+              </div>
+              <div class="block__card__content">
+                  <h3 >Felpa</h3>
+                  <h2 class="price">29.99€</h2>
+                  <form class="" action="javascript:apri('../payment_page.html');" method="post">
+                    <input type="number" name="" value="0" min="1" class="n_product required"> <br>
+                    <input type="submit" name="" value="COMPRA ORA!" class="buy">
+                  </form>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="block__card a1">
+              <div class="block__card__img">
+                  <img src="../../images/gadgets/maglietta.png" alt="" width="200px">
+              </div>
+              <div class="block__card__content">
+                  <h3>T-shirt</h3>
+                  <h2 class="price">24.99€</h2>
+                  <form class="" action="javascript:apri('../payment_page.html');"  method="post">
+                    <input type="number" name="" value="0" min="1" class="n_product required"> <br>
+                    <input type="submit" name="" value="COMPRA ORA!" class="buy" >
+                  </form>
+              </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  <script> function apri(url) { newin = window.open(url,'titolo','scrollbars=no,resizable=yes, width=360,height=600,status=no,location=no,toolbar=no'); } </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+  $( document ).ready(function() {
+
+    /* Open Panel */
+    $( ".hamburger" ).on('click', function() {
+      $(".menu").toggleClass("menu--open");
+    });
+
+
+  });
+  </script>
+  </body>
+</html>
