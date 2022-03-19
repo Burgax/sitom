@@ -230,6 +230,10 @@ p{line-height: 28px; color:#000; font-weight: 300;}
     height: 450px;
 
   }
+  .card:hover{
+    height: 500px;
+    transition: 0.5s;
+  }
   .card__img{
     height: 50%;
   }
