@@ -156,4 +156,7 @@ body{
   .block__card .block__card__content h3 {
     font-size: 25px;
   }
+  .a{
+    font-size: 30px;
+  }
 }
