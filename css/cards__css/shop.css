@@ -153,4 +153,7 @@ body{
     margin: 35px;
     height: 430px;
   }
+  .block__card .block__card__content h3 {
+    font-size: 25px;
+  }
 }

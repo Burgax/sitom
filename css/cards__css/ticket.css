@@ -10,18 +10,6 @@ body{
   filter: contrast(8px);
 }
 
-h1, h2, h3, h4, h5, p{color:#000; padding-bottom: 30px;}
-a{text-decoration: none;}
-.big-text{font-size: 70px;font-weight: 900;}
-.med-text{font-size: 40px;}
-.normal-text{font-size: 20px;}
-.small-text{font-size: 14px;}
-.tw{color: #FFF;}
-
-@media (max-width: 768px) {
-  .big-text{font-size: 40px;}
-  .button{width: 60%; text-align: center;}
-}
 
 /* Body */
 .contact-form{
